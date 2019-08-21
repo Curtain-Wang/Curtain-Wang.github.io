@@ -345,43 +345,18 @@
       
         
           
-            <p>滚动数组优化是动态规划中常见的技巧，特点能降低空间复杂度。时间复杂度不变。</p>
-<pre><code>public static void main(String[] args) {
+          滚动数组优化是动态规划中常见的技巧，特点能降低空间复杂度。时间复杂度不变。
+public static void main(String[] args) {
     Scanner input = new Scanner(System.in);
-    String A = input.next();
-    char[] A1 = A.toCharArray();
-    String B = input.next();
-    char[] B1 = B.toCharArray();
-    int[] C_OLD = new int[B.length()+1];//储存表格的第i-1行 表格在另一个未优化博客上
-    int[] C_NEW = new int[A.length()+1];//储存表格的第i行
-
-    for (int i = 0; i &lt;= B.length(); i++)
-        C_OLD[i] = i;
-    for (int i = 1; i &lt;= A.length(); i++)
-    {
-        C_NEW[0] = i;
-        for (int j = 1; j &lt;= B.length(); j++) //此for循环在填写第i行的数据
-        {
-            if (A1[i-1] == B1[j-1])
-                C_NEW[j] = C_OLD[j-1];
-            else
-                C_NEW[j] = min(C_NEW[j-1], C_OLD[j], C_OLD[j-1]) + 1;
-
-        }
-        C_OLD = C_NEW.clone(); //将第i行的数据给OLD 然后继续填写NEW的数据
-
-    }
-    System.out.println(C_NEW[B.length()]);
-}
-
-private static int min(int a, int b, int c) {
-    if (a &lt; b)
-        b = a;
-    if (c &lt; b)
-        b = c;
-    return b;
-}</code></pre>
-          
+    String A = input.next()
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/08/21/My-first-Post/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -499,21 +474,15 @@ private static int min(int a, int b, int c) {
       
         
           
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-          
+          Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in 
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/08/20/hello-world/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
